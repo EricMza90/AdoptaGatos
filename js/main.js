@@ -1,89 +1,50 @@
-/* let nombre = "Eric";
-console.log(nombre);
-let altura = 1.73
-let peso = 77
-let imc = peso / (altura*altura)
-console.log(imc) */
 
-// SINTASIS Y VARIABLES //
+let entrada = 'Tienda de vinos "Wines of Mendoza"';
 
+    alert( entrada );
 
-//PROMPT PARA TEXTOS
+    console.log(entrada);
 
-/* let ingreseNombre = prompt("Ingrese su Nombre")
-alert("El nombre ingresado es:" + " " + ingreseNombre)
-console.log("El nombre ingresado es:" + " " + ingreseNombre) */
+let edad = prompt("Por Favor Ingresa tu edad: ");
+    console.log(edad);
 
+    if (edad >= 18){
+    let nombre = prompt("Por favor Ingresa tu Nombre");
+    alert("Bienvenido " + nombre);
+    console.log("Bienvenido " + nombre);
 
-//CALCULADORA IMC
-
-/* //ENTRADA
-let peso = prompt("Ingrese su Peso");
-let altura = prompt("Ingrese su Altura");
-
-//PROCESO
-let imc = peso/ (altura*altura);
-let imcFinal = imc.toFixed(2); //tofixed sirve para achicar el numero de decimales que queremos ver o mostrar
-
-//SALIDA
-alert ("Su indice de masa corporal (IMC) es: "+ imcFinal + "%" );
-console.log( "Su indice de masa corporal (IMC) es: "+ imcFinal + "%" ); */
-
-//PROMPT PARA NUMEROS
-
-/* let valorIngresado = parseInt(prompt("Ingrese un Valor:"));// convierte de string a integer
-let calculo = valorIngresado * 1.30;
-let mensaje = "El valor ingresado es: $" + calculo;
-alert(mensaje);
-console.log(mensaje)  */
-
-
-// CONTROL DE FLUJOS //
-
-/* Valores booleanos pueden tomar dos valores true o false, es una condicion de si cumple una condicion toma un camino
-si es falso toma otro  */
-
-
-
-
-
-
-
-// IF- ELSE // La condicion se define en el if, else solo aplica si la condicion inicial no se cumple.
-
-/* let unColor = prompt("Ingrese un Color");
-
-if (unColor == "Verde"){
-    console.log ("El Color es Verde")
+}   else{
+    alert("Eres menor de edad, no puedes ingresar al sitio!!!");
+    console.log("Eres menor de edad, no puedes ingresar al sitio!!!");
+    
 }
-else {
-    console.log ("El Color  no es Verde")
-} */
 
-/* let ingreseNombre = prompt("Ingrese Un Nombre");
-
-if(ingreseNombre == ""){
-    alert("Debe ingresar un nombre");
-
+let tintoMalbec= "Killka Malbec";
+let tintoMalbecPrecio = 1400; 
+let tintoCabernet= "Putruele Cavernet Reserva";
+let tintoCabernetPrecio = 1200;    
+let blancoDulce= "Norton Cosecha Tardia";
+let blancoDulcePrecio = 600;
+let blancoRose= "Cosecha Tardia Rose Benjamin";
+let blancoRosePrecio= 800;
+let tuSeleccion = prompt("Ingres tu seleccion: Tinto Malbec; Tinto Cabernet; Blanco Dulce; Blanco Rose ");
+switch(tuSeleccion) {
+case "Tinto Malbec":
+  alert ("Nuestra Seleccion para vos es: " + tintoMalbec + " " + "Precio $" + " " + tintoMalbecPrecio );
+  console.log("Nuestra Seleccion para vos es: " + tintoMalbec + " " + "Precio $" + " " + tintoMalbecPrecio);
+  break; 
+case "Tinto Cabernet" :
+    alert ("Nuestra Seleccion para vos es: " + tintoCabernet + " " + "Precio $" + " " + tintoCabernetPrecio );
+    console.log("Nuestra Seleccion para vos es: " + tintoCabernet + " " + "Precio $" + " " + tintoCabernetPrecio );
+  break;
+case "Blanco Dulce" :
+    alert ("Nuestra Seleccion para vos es: " + blancoDulce + " " + "Precio $" + " " + blancoDulcePrecio );
+    console.log("Nuestra Seleccion para vos es: " + blancoDulce + " " + "Precio $" + " " + blancoDulcePrecio );
+  break; 
+case "Blanco Rose" :
+    alert ("Nuestra Seleccion para vos es: " + blancoRose + " " + "Precio $" + " " + blancoRosePrecio );
+    console.log("Nuestra Seleccion para vos es: " + blancoRose + " " + "Precio $" + " " + blancoRosePrecio);
+  break;
+default: 
+alert ("No has ingresado un valor valido, por favor intenta nuevamente: ");
 }
-else{
-    alert("El Nombre Ingresado es: "+ ingreseNombre)
-}
-console.log( "El Nombre Ingresado es: "+ ingreseNombre) */
-
-// IF ELSE IF // parte de una condicion IF y va analizando las otras condiciones ELSE IF, si es incorrecto aplica ELSE
-
-/* let precio = 200
-
-if (precio < 20) {
-    alert ("El precio es: 20")
-}
-else if (precio < 30) {
-    alert ("El precio es: 30")
-}
-else if (precio < 65) {
-    alert ("El precio es: 65")
-}
-else{
-    alert( "El precio es: 100")
-} */
