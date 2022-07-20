@@ -21,13 +21,13 @@ let edad = prompt("Por Favor Ingresa tu edad: ");
 
 let tintoMalbec= "Killka Malbec";
 let tintoMalbecPrecio = 1400; 
-let tintoCabernet= "Putruele Cavernet Reserva";
+let tintoCabernet= "Putruele Cabernet Reserva";
 let tintoCabernetPrecio = 1200;    
 let blancoDulce= "Norton Cosecha Tardia";
 let blancoDulcePrecio = 600;
 let blancoRose= "Cosecha Tardia Rose Benjamin";
 let blancoRosePrecio= 800;
-let tuSeleccion = prompt("Ingres tu seleccion: Tinto Malbec; Tinto Cabernet; Blanco Dulce; Blanco Rose ");
+let tuSeleccion = prompt("Ingresa tu seleccion: Tinto Malbec; Tinto Cabernet; Blanco Dulce; Blanco Rose ");
 switch(tuSeleccion) {
 case "Tinto Malbec":
   alert ("Nuestra Seleccion para vos es: " + tintoMalbec + " " + "Precio $" + " " + tintoMalbecPrecio );
