@@ -1,4 +1,3 @@
-
 let entrada = 'Tienda de vinos "Wines of Mendoza"';
 
     alert( entrada );
