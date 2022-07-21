@@ -15,35 +15,21 @@ let edad = prompt("Por Favor Ingresa tu edad: ");
 }   else{
     alert("Eres menor de edad, no puedes ingresar al sitio!!!");
     console.log("Eres menor de edad, no puedes ingresar al sitio!!!");
-    
+
 }
 
-let tintoMalbec= "Killka Malbec";
-let tintoMalbecPrecio = 1400; 
-let tintoCabernet= "Putruele Cabernet Reserva";
-let tintoCabernetPrecio = 1200;    
-let blancoDulce= "Norton Cosecha Tardia";
-let blancoDulcePrecio = 600;
-let blancoRose= "Cosecha Tardia Rose Benjamin";
-let blancoRosePrecio= 800;
-let tuSeleccion = prompt("Ingresa tu seleccion: Tinto Malbec; Tinto Cabernet; Blanco Dulce; Blanco Rose ");
-switch(tuSeleccion) {
-case "Tinto Malbec":
-  alert ("Nuestra Seleccion para vos es: " + tintoMalbec + " " + "Precio $" + " " + tintoMalbecPrecio );
-  console.log("Nuestra Seleccion para vos es: " + tintoMalbec + " " + "Precio $" + " " + tintoMalbecPrecio);
-  break; 
-case "Tinto Cabernet" :
-    alert ("Nuestra Seleccion para vos es: " + tintoCabernet + " " + "Precio $" + " " + tintoCabernetPrecio );
-    console.log("Nuestra Seleccion para vos es: " + tintoCabernet + " " + "Precio $" + " " + tintoCabernetPrecio );
-  break;
-case "Blanco Dulce" :
-    alert ("Nuestra Seleccion para vos es: " + blancoDulce + " " + "Precio $" + " " + blancoDulcePrecio );
-    console.log("Nuestra Seleccion para vos es: " + blancoDulce + " " + "Precio $" + " " + blancoDulcePrecio );
-  break; 
-case "Blanco Rose" :
-    alert ("Nuestra Seleccion para vos es: " + blancoRose + " " + "Precio $" + " " + blancoRosePrecio );
-    console.log("Nuestra Seleccion para vos es: " + blancoRose + " " + "Precio $" + " " + blancoRosePrecio);
-  break;
-default: 
-alert ("No has ingresado un valor valido, por favor intenta nuevamente: ");
+function calcularPrecio (precioVino, cantidadVino, porcentajeDescuento) {
+  let descuento = (precioVino * porcentajeDescuento) / 100;
+
+  let precioConDescuento = precioVino - descuento;
+
+  return (precioConDescuento * cantidadVino);
 }
+
+let vino = parseFloat(prompt("Ingrese el precio del vino que deseas comprar:"));
+let cantidad = parseInt(prompt("Ingrese la cantidad de unidades quieres comprar:"));
+let descuento = parseInt(prompt("Tienes un cupon?? Ingresa el porcentaje aqui:"));
+
+let precioFinal = calcularPrecio(vino, cantidad, descuento);
+alert("El precio total de tu compra es $" + precioFinal);
+alert("Que Disfrutes tu compra!!");
